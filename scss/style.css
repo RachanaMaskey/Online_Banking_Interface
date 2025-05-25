@@ -1,0 +1,313 @@
+.navbar {
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin: 0px 20px 0px 40px;
+}
+.navbar .top-nav {
+  background-color: #FED260;
+  margin: -8px 0px 10px -20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  width: auto;
+  height: 30px;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar .top-nav .nav-list {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 30px;
+}
+.navbar .top-nav .nav-list span {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.navbar .top-nav .nav-list a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .top-nav .nav-list span:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFF5D7;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+.navbar .top-nav .contact button {
+  background-color: transparent;
+  width: 60px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 36px;
+  font-size: 14px;
+  padding: 5px 0px 15px 15px;
+}
+.navbar .top-nav .contact button i {
+  color: white;
+}
+.navbar .top-nav .contact button:hover {
+  background-color: #316776;
+  border: 2px solid #316776;
+  color: C;
+}
+.navbar .top-nav .contact button:hover i {
+  color: white;
+}
+.navbar .nav-bottom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #FFF5D7;
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar .nav-bottom .bottom-list {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 30px;
+  gap: 30px;
+}
+.navbar .nav-bottom .bottom-list span {
+  margin: 0px;
+  margin-top: 20px;
+}
+.navbar .nav-bottom .bottom-list a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .nav-bottom .bottom-list span:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFD360;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 18px;
+}
+.navbar .nav-bottom .nav-logo {
+  display: flex;
+}
+.navbar .nav-bottom .nav-logo figure {
+  margin: 5px 0px 0px 0px;
+}
+.navbar .nav-bottom .nav-logo figure img {
+  width: 220px;
+  height: 110px;
+}
+.navbar .nav-bottom .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+}
+.navbar .nav-bottom .contact .contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+}
+.navbar .nav-bottom .contact .contact-list .login button {
+  padding: 10px 0px 10px 50px;
+}
+.navbar .nav-bottom .contact .contact-list .login:hover .login-list {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  z-index: 1;
+  background-color: #FFE99A;
+  border: #316776;
+  color: #316776;
+  padding: 0px 40px 0px 40px;
+}
+.navbar .nav-bottom .contact .contact-list .login-list {
+  display: none;
+  list-style: none;
+  text-align: left;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar .nav-bottom .contact .contact-list .login-list li {
+  padding: 10px 0px;
+}
+.navbar .nav-bottom .contact .contact-list .login-list li:hover {
+  text-decoration: underline;
+  scale: 1.05;
+}
+.navbar .nav-bottom .contact .contact-list .login-list a {
+  text-decoration: none;
+  color: #316776;
+}
+.navbar .nav-bottom .contact .contact-list .apply button {
+  padding: 10px 0px 10px 20px;
+}
+.navbar .nav-bottom .contact .contact-list .apply:hover .apply-list {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  z-index: 1;
+  background-color: #FFE99A;
+  border: #316776;
+  color: #316776;
+  padding: 0px 40px 0px 40px;
+}
+.navbar .nav-bottom .contact .contact-list .apply-list {
+  display: none;
+  list-style: none;
+  text-align: left;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar .nav-bottom .contact .contact-list .apply-list li {
+  padding: 10px 0px;
+}
+.navbar .nav-bottom .contact .contact-list .apply-list li:hover {
+  text-decoration: underline;
+  scale: 1.05;
+}
+.navbar .nav-bottom .contact .contact-list .apply-list a {
+  text-decoration: none;
+  color: #316776;
+}
+.navbar .nav-bottom .contact .contact-list button {
+  background-color: transparent;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #316776;
+  color: #316776;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 36px;
+  font-size: 18px;
+  padding: 10px 0px 10px 20px;
+}
+.navbar .nav-bottom .contact .contact-list button i {
+  color: #316776;
+}
+.navbar .nav-bottom .contact .contact-list button:hover {
+  background-color: #FFD360;
+  border: 1px solid #FFD360;
+  color: white;
+}
+.navbar .nav-bottom .contact .contact-list button:hover i {
+  color: white;
+}
+
+.banner {
+  width: auto;
+  height: 500px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #FED260;
+  border-radius: 100px 100px 0px 0px;
+  height: auto;
+  margin: 40px -10px -10px -10px;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 100px;
+}
+footer .footer-content .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+footer .footer-content .footer-top a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-content .footer-top h6 {
+  font-size: 17px;
+  margin: 0px;
+}
+footer .footer-content .footer-top span :hover {
+  color: white;
+}
+footer .footer-content .footer-top .company-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-top .connection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-top .connection i {
+  font-size: 13px;
+}
+footer .footer-content .footer-top .connection :hover {
+  color: white;
+  scale: 1.2;
+}
+footer .footer-content .footer-top .quicklinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-top .document-verifier {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-top .rates-interest {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-content .footer-bottom .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .footer-content .footer-bottom .logos i {
+  padding: 10px;
+  font-size: 25px;
+}
+footer .footer-content .footer-bottom .logos :hover {
+  color: white;
+  scale: 1.2;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Open Sans";
+  background-color: #FFF5D7;
+}/*# sourceMappingURL=style.css.map */

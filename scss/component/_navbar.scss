@@ -1,0 +1,222 @@
+.navbar{
+    width:auto;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    font-size:18px;
+    margin:0px 20px 0px 40px;
+    .top-nav{
+        background-color: #FED260;
+        margin:-8px 0px 10px -20px;
+        padding-left: 20px;
+        padding-bottom:5px;
+        font-size: 14px;;
+        width:auto;
+        height: 30px;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .nav-list{
+            display:flex;
+            // flex-direction: column;
+            margin-top:auto;
+            margin-bottom: auto;
+            gap:30px;
+            span{
+                margin:0px;
+                margin-top:10px;
+                margin-bottom: 5px;
+            }
+            a{
+                text-decoration: none;
+                color:black; 
+            }
+            span:hover{
+                text-decoration: underline;
+                text-decoration-color:#FFF5D7;    
+                text-decoration-thickness: 3px;
+                text-underline-offset: 5px; 
+            }
+        }
+        .contact{
+            button{
+                background-color:transparent;
+                width: 60px;
+                height: 20px;
+                display: flex;
+                flex-direction: row;
+                gap:10px;
+                border: 2px solid white;
+                color: white;
+                cursor: pointer;
+                margin-top: 5px;
+                margin-right: 36px;
+                font-size:14px;
+                padding:5px 0px 15px 15px;
+
+                i{
+                    color: white;
+                }
+                &:hover{
+                    background-color:#316776;
+                    border: 2px solid #316776;
+                    color:C;
+                    i{
+                        color:white;
+                    }
+                }  
+            }   
+        }
+    }
+   
+    .nav-bottom{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: #FFF5D7; 
+        margin: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .bottom-list{
+            display:flex;
+            // flex-direction: column;
+            margin-top:auto;
+            margin-bottom: auto;
+            padding-left: 30px;
+            gap:30px;
+            span{
+                margin:0px;
+                margin-top:20px;
+            }
+            a{
+                text-decoration: none;
+                color:black; 
+            }
+            span:hover{
+                text-decoration: underline;
+                text-decoration-color:#FFD360;    
+                text-decoration-thickness: 3px;
+                text-underline-offset: 18px; 
+            }
+        }
+        .nav-logo{
+            display: flex;
+            figure{
+                margin: 5px 0px 0px 0px;
+                img{
+                    width:220px;
+                    height:110px;
+                }
+            }
+        }
+
+        .contact{
+            @include row;
+            gap:5px;
+            margin-top:auto;
+            margin-bottom: auto;
+            position: relative;
+            .contact-list{
+                @include row;
+                list-style: none;
+                gap:10px;
+                .login{
+                    button{
+                        padding:10px 0px 10px 50px;
+                    } 
+                    &:hover .login-list{
+                        display:block;
+                        position: absolute;
+                        top: 70px;
+                        left: 20px;
+                        z-index: 1;
+                         background-color: #FFE99A;
+                        border: #316776;
+                        color: #316776;
+                        padding:0px 40px 0px 40px;
+                    } 
+                }
+                .login-list{
+                    display:none;
+                    list-style: none;
+                    text-align: left;
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+                    li{
+                        padding:10px 0px;
+                        &:hover{
+                            text-decoration: underline;
+                            scale: 1.05;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #316776;
+                    }
+                }
+                 .apply{
+                    button{
+                        padding:10px 0px 10px 20px;
+                    } 
+                    &:hover .apply-list{
+                        display:block;
+                        position: absolute;
+                        top: 70px;
+                        left: 200px;
+                        z-index: 1;
+                        background-color: #FFE99A;
+                        border: #316776;
+                        color: #316776;
+                        padding:0px 40px 0px 40px;
+                    } 
+                }
+                .apply-list{
+                    display:none;
+                    list-style: none;
+                    text-align: left;
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+                    li{
+                        padding:10px 0px;
+                        &:hover{
+                            text-decoration: underline;
+                            scale: 1.05;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #316776;
+                    }
+                }
+                button{
+                    background-color:transparent;
+                    width: 170px;
+                    height: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    gap:10px;
+                    border: 1px solid #316776;
+                    color: #316776;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    margin-right: 36px;
+                    font-size:18px;
+                    padding:10px 0px 10px 20px;
+                    i{
+                        color: #316776;
+                    }
+                    &:hover{
+                        background-color:#FFD360;
+                        border: 1px solid #FFD360;
+                        color:white;
+                        i{
+                            color:white;
+                        }
+                    }  
+                }      
+            }
+        }
+    }
+}

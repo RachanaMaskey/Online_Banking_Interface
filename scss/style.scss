@@ -1,0 +1,31 @@
+//css for flex-row
+@import './utils/display-row';
+
+//css for flex-column
+@import './utils/display-column';
+
+//css for navbar
+@import './utils/hr_line';
+
+//css for navbar
+@import './utils/navbutton';
+
+//css for navbar
+@import './component/navbar';
+
+//css for banner
+@import './section/banner';
+
+//css for banner
+@import './section/footer';
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+
+body{
+    font-family: 'Open Sans';
+    background-color: #FFF5D7;
+}

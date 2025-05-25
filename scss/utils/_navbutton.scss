@@ -1,0 +1,25 @@
+@mixin button{
+    background-color:transparent;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    border: 1px solid #FEC260;
+    color: #FEC260;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 36px;
+    font-size:18px;
+    padding:10px 0px 10px 15px;
+    i{
+        color: #FEC260;
+    }
+    &:hover{
+        background-color:#FEC260;
+        color:white;
+        i{
+            color:white;
+        }
+    }  
+} 
