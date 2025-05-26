@@ -19,9 +19,12 @@
 //css for banner
 @import './section/footer';
 
+//css for login page 
+@import './page/login';
+
 @font-face {
-    font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-Regular.ttf") format('truetype');
 }
 
 

@@ -40,38 +40,104 @@
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }
-.navbar .top-nav .contact button {
+.navbar .top-nav .language {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  position: relative;
+}
+.navbar .top-nav .language .language-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar .top-nav .language .language-list .language-hover button {
   background-color: transparent;
-  width: 60px;
-  height: 20px;
+  width: 150px;
+  height: 40px;
   display: flex;
   flex-direction: row;
   gap: 10px;
-  border: 2px solid white;
-  color: white;
+  border: 1px solid #FEC260;
+  color: #FEC260;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 36px;
-  font-size: 14px;
-  padding: 5px 0px 15px 15px;
+  font-size: 18px;
+  padding: 10px 0px 10px 15px;
+  width: 70px;
+  height: 25px;
+  padding: 5px 0px 10px 10px;
+  margin: 5px 30px 0px 0px;
+  font-size: 15px;
+  border: 1px solid #316776;
+  color: #316776;
 }
-.navbar .top-nav .contact button i {
+.navbar .top-nav .language .language-list .language-hover button i {
+  color: #FEC260;
+}
+.navbar .top-nav .language .language-list .language-hover button:hover {
+  background-color: #FEC260;
   color: white;
 }
-.navbar .top-nav .contact button:hover {
+.navbar .top-nav .language .language-list .language-hover button:hover i {
+  color: white;
+}
+.navbar .top-nav .language .language-list .language-hover button i {
+  color: #316776;
+}
+.navbar .top-nav .language .language-list .language-hover button:hover {
   background-color: #316776;
-  border: 2px solid #316776;
-  color: C;
 }
-.navbar .top-nav .contact button:hover i {
-  color: white;
+.navbar .top-nav .language .language-list .language-hover:hover .hover-list {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  z-index: 10;
+  background-color: #FFE99A;
+  border: #316776;
+  color: #316776;
+  padding: 0px 40px 0px 40px;
+}
+.navbar .top-nav .language .language-list .language-hover:hover .hover-list li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px 0px;
+}
+.navbar .top-nav .language .language-list .language-hover:hover .hover-list img {
+  width: 20px;
+  height: 20px;
+}
+.navbar .top-nav .language .language-list .hover-list {
+  display: none;
+  list-style: none;
+  text-align: left;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar .top-nav .language .language-list .hover-list li {
+  padding: 10px 0px;
+}
+.navbar .top-nav .language .language-list .hover-list li:hover {
+  text-decoration: underline;
+  scale: 1.05;
+}
+.navbar .top-nav .language .language-list .hover-list a {
+  text-decoration: none;
+  color: #316776;
 }
 .navbar .nav-bottom {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 5;
   background: #FFF5D7;
   margin: 40px 0px 0px 0px;
   display: flex;
@@ -215,10 +281,14 @@
 }
 
 .banner {
-  width: auto;
+  width: 100%;
   height: 500px;
 }
-.banner img {
+.banner .banner-img {
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-img img {
   width: 100%;
   height: 100%;
 }
@@ -227,7 +297,7 @@ footer {
   background-color: #FED260;
   border-radius: 100px 100px 0px 0px;
   height: auto;
-  margin: 40px -10px -10px -10px;
+  margin: 40px -10px -10px 30px;
 }
 footer .footer-content {
   display: flex;
@@ -301,6 +371,99 @@ footer .footer-content .footer-bottom .logos i {
 footer .footer-content .footer-bottom .logos :hover {
   color: white;
   scale: 1.2;
+}
+
+.login-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px -20px 0px -20px;
+}
+.login-content .right-section {
+  width: 25%;
+  height: 100vh;
+  justify-content: center;
+  margin-left: 70px;
+}
+.login-content .right-section .home {
+  margin-left: 330px;
+}
+.login-content .right-section .home i {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+}
+.login-content .right-section figure {
+  width: 150px;
+  height: 150px;
+  margin: 130px 0px 0px 85px;
+}
+.login-content .right-section figure img {
+  width: 100%;
+  height: 100%;
+}
+.login-content .right-section .form-section {
+  justify-content: center;
+}
+.login-content .right-section .form-section form {
+  margin-top: 70px;
+}
+.login-content .right-section .form-section form input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #316776;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 10px 0px 10px 0px;
+}
+.login-content .right-section .form-section form button {
+  background-color: transparent;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #FEC260;
+  color: #FEC260;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 36px;
+  font-size: 18px;
+  padding: 10px 0px 10px 15px;
+  background-color: #FED260;
+  color: white;
+  border-radius: 10px;
+  justify-content: center;
+  margin-left: 85px;
+}
+.login-content .right-section .form-section form button i {
+  color: #FEC260;
+}
+.login-content .right-section .form-section form button:hover {
+  background-color: #FEC260;
+  color: white;
+}
+.login-content .right-section .form-section form button:hover i {
+  color: white;
+}
+.login-content .right-section .form-section form button:hover {
+  scale: 1.2;
+  background-color: #FED260;
+}
+.login-content .left-section {
+  width: 70%;
+  height: 100vh;
+  margin: -10px 0px -40px 0px;
+}
+.login-content .left-section figure {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+}
+.login-content .left-section figure img {
+  width: 100%;
+  height: 100%;
 }
 
 @font-face {
